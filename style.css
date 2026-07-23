@@ -1,0 +1,528 @@
+/* ============================
+   RESET
+============================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5fbff;
+    color:#333;
+}
+
+/* ============================
+   NAVBAR
+============================ */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:75px;
+    background:rgba(0,80,120,.85);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#7ee8ff;
+}
+
+/* ============================
+   HERO
+============================ */
+
+header{
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,90,130,.45),rgba(0,90,130,.45)),
+    url("fondo.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+}
+
+.hero{
+    color:white;
+    max-width:800px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:65px;
+    font-weight:800;
+    text-shadow:0 5px 20px rgba(0,0,0,.35);
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:24px;
+    font-weight:300;
+}
+
+.botonPrincipal{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 38px;
+
+    border-radius:40px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.botonPrincipal:hover{
+
+    background:#1bb956;
+
+    transform:translateY(-4px);
+
+}
+
+/* ============================
+   OLAS
+============================ */
+
+.olas{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    line-height:0;
+}
+
+.olas svg{
+    display:block;
+    width:100%;
+    height:120px;
+}
+
+.olas path{
+    fill:#f5fbff;
+}
+
+/* ============================
+   TITULOS
+============================ */
+
+section h2{
+
+    text-align:center;
+
+    color:#008ed0;
+
+    font-size:42px;
+
+    margin-bottom:45px;
+
+}
+
+/* ============================
+   PRODUCTOS
+============================ */
+
+#productos{
+
+    padding:90px 8%;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.producto{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+}
+
+.producto:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.producto img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+}
+
+.contenido{
+
+    padding:25px;
+
+}
+
+.contenido h3{
+
+    color:#008ed0;
+
+    margin-bottom:12px;
+
+}
+
+.contenido span{
+
+    display:block;
+
+    font-size:30px;
+
+    color:#0aa84f;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.contenido p{
+
+    line-height:1.7;
+
+    margin-bottom:22px;
+
+}
+
+.contenido a{
+
+    display:block;
+
+    text-align:center;
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.contenido a:hover{
+
+    background:#1bb956;
+
+}
+
+/* ============================
+   BENEFICIOS
+============================ */
+
+#nosotros{
+
+    padding:90px 8%;
+
+    background:white;
+
+}
+
+.beneficios{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+.beneficios div{
+
+    background:#eef9ff;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+.beneficios div:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.beneficios i{
+
+    font-size:55px;
+
+    color:#00a4e4;
+
+    margin-bottom:18px;
+
+}
+
+.beneficios h3{
+
+    color:#008ed0;
+
+}
+
+/* ============================
+   RESEÑAS
+============================ */
+
+#opiniones{
+
+    padding:90px 8%;
+
+}
+
+.reviews{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.review{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+.review p{
+
+    margin:18px 0;
+
+    line-height:1.7;
+
+}
+
+/* ============================
+   FOOTER
+============================ */
+
+footer{
+
+    background:#006b9c;
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+footer h2{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+footer p{
+
+    margin:12px;
+
+    font-size:18px;
+
+}
+
+/* ============================
+   BOTÓN FLOTANTE
+============================ */
+
+.whatsappFlotante{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    background:#25D366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:35px;
+
+    text-decoration:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+.whatsappFlotante:hover{
+
+    transform:scale(1.12);
+
+}
+
+/* ============================
+   ANIMACIONES
+============================ */
+
+.producto,
+.review,
+.beneficios div{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:1s;
+
+}
+
+.mostrar{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+@media(max-width:900px){
+
+nav{
+
+    padding:0 20px;
+
+}
+
+nav ul{
+
+    display:none;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+}
+
+section h2{
+
+    font-size:34px;
+
+}
+
+}
