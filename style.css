@@ -18,6 +18,7 @@ body{
     color:#333;
 }
 
+
 /* ============================
    NAVBAR
 ============================ */
@@ -28,14 +29,19 @@ nav{
     left:0;
     width:100%;
     height:75px;
+
     background:rgba(0,80,120,.85);
     backdrop-filter:blur(10px);
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     padding:0 8%;
+
     z-index:1000;
 }
+
 
 .logo{
     color:white;
@@ -43,31 +49,43 @@ nav{
     font-weight:700;
 }
 
+
 nav ul{
     display:flex;
     list-style:none;
 }
 
+
 nav ul li{
     margin-left:30px;
 }
 
+
 nav ul li a{
+
     color:white;
     text-decoration:none;
     font-weight:500;
     transition:.3s;
+
 }
 
+
 nav ul li a:hover{
+
     color:#7ee8ff;
+
 }
+
+
 
 /* ============================
    HERO
 ============================ */
 
+
 header{
+
     height:100vh;
 
     background:
@@ -84,25 +102,41 @@ header{
     text-align:center;
 
     position:relative;
+
 }
 
+
+
 .hero{
+
     color:white;
     max-width:800px;
     padding:20px;
+
 }
+
+
 
 .hero h1{
+
     font-size:65px;
     font-weight:800;
+
     text-shadow:0 5px 20px rgba(0,0,0,.35);
+
 }
 
+
+
 .hero p{
+
     margin-top:20px;
     font-size:24px;
     font-weight:300;
+
 }
+
+
 
 .botonPrincipal{
 
@@ -128,6 +162,8 @@ header{
 
 }
 
+
+
 .botonPrincipal:hover{
 
     background:#1bb956;
@@ -136,30 +172,44 @@ header{
 
 }
 
+
+
 /* ============================
    OLAS
 ============================ */
 
+
 .olas{
+
     position:absolute;
     bottom:0;
     width:100%;
     line-height:0;
+
 }
 
+
 .olas svg{
+
     display:block;
     width:100%;
     height:120px;
+
 }
 
+
 .olas path{
+
     fill:#f5fbff;
+
 }
+
+
 
 /* ============================
    TITULOS
 ============================ */
+
 
 section h2{
 
@@ -173,15 +223,20 @@ section h2{
 
 }
 
+
+
 /* ============================
    PRODUCTOS
 ============================ */
+
 
 #productos{
 
     padding:90px 8%;
 
 }
+
+
 
 .grid{
 
@@ -192,6 +247,8 @@ section h2{
     gap:35px;
 
 }
+
+
 
 .producto{
 
@@ -207,11 +264,15 @@ section h2{
 
 }
 
+
+
 .producto:hover{
 
     transform:translateY(-10px);
 
 }
+
+
 
 .producto img{
 
@@ -223,11 +284,15 @@ section h2{
 
 }
 
+
+
 .contenido{
 
     padding:25px;
 
 }
+
+
 
 .contenido h3{
 
@@ -236,6 +301,8 @@ section h2{
     margin-bottom:12px;
 
 }
+
+
 
 .contenido span{
 
@@ -251,6 +318,8 @@ section h2{
 
 }
 
+
+
 .contenido p{
 
     line-height:1.7;
@@ -258,6 +327,8 @@ section h2{
     margin-bottom:22px;
 
 }
+
+
 
 .contenido a{
 
@@ -281,15 +352,21 @@ section h2{
 
 }
 
+
+
 .contenido a:hover{
 
     background:#1bb956;
 
 }
 
+
+
+
 /* ============================
    BENEFICIOS
 ============================ */
+
 
 #nosotros{
 
@@ -298,6 +375,8 @@ section h2{
     background:white;
 
 }
+
+
 
 .beneficios{
 
@@ -308,6 +387,8 @@ section h2{
     gap:30px;
 
 }
+
+
 
 .beneficios div{
 
@@ -323,11 +404,15 @@ section h2{
 
 }
 
+
+
 .beneficios div:hover{
 
     transform:translateY(-8px);
 
 }
+
+
 
 .beneficios i{
 
@@ -339,21 +424,38 @@ section h2{
 
 }
 
+
+
 .beneficios h3{
 
     color:#008ed0;
 
 }
 
+
+
+.beneficios p{
+
+    margin-top:10px;
+
+    line-height:1.6;
+
+}
+
+
+
 /* ============================
-   RESEÑAS
+   COMPROMISO
 ============================ */
 
-#opiniones{
+
+#compromiso{
 
     padding:90px 8%;
 
 }
+
+
 
 .reviews{
 
@@ -364,6 +466,8 @@ section h2{
     gap:30px;
 
 }
+
+
 
 .review{
 
@@ -379,17 +483,32 @@ section h2{
 
 }
 
+
+
+.review i{
+
+    font-size:45px;
+
+    color:#00a4e4;
+
+}
+
+
+
 .review p{
 
-    margin:18px 0;
+    margin-top:20px;
 
     line-height:1.7;
 
 }
 
+
+
 /* ============================
    FOOTER
 ============================ */
+
 
 footer{
 
@@ -403,6 +522,8 @@ footer{
 
 }
 
+
+
 footer h2{
 
     color:white;
@@ -410,6 +531,8 @@ footer h2{
     margin-bottom:20px;
 
 }
+
+
 
 footer p{
 
@@ -419,9 +542,12 @@ footer p{
 
 }
 
+
+
 /* ============================
-   BOTÓN FLOTANTE
+   WHATSAPP FLOTANTE
 ============================ */
+
 
 .whatsappFlotante{
 
@@ -431,15 +557,19 @@ footer p{
 
     bottom:25px;
 
+
     width:65px;
 
     height:65px;
+
 
     background:#25D366;
 
     color:white;
 
+
     border-radius:50%;
+
 
     display:flex;
 
@@ -447,17 +577,24 @@ footer p{
 
     align-items:center;
 
+
     font-size:35px;
+
 
     text-decoration:none;
 
+
     box-shadow:0 10px 25px rgba(0,0,0,.25);
 
+
     transition:.3s;
+
 
     z-index:999;
 
 }
+
+
 
 .whatsappFlotante:hover{
 
@@ -465,21 +602,26 @@ footer p{
 
 }
 
+
+
 /* ============================
    ANIMACIONES
 ============================ */
+
 
 .producto,
 .review,
 .beneficios div{
 
-    opacity:0;
+    opacity:1;
 
-    transform:translateY(40px);
+    transform:translateY(0);
 
     transition:1s;
 
 }
+
+
 
 .mostrar{
 
@@ -489,11 +631,15 @@ footer p{
 
 }
 
+
+
 /* ============================
-   RESPONSIVE
+   CELULAR
 ============================ */
 
+
 @media(max-width:900px){
+
 
 nav{
 
@@ -501,11 +647,14 @@ nav{
 
 }
 
+
 nav ul{
 
     display:none;
 
 }
+
+
 
 .hero h1{
 
@@ -513,16 +662,21 @@ nav ul{
 
 }
 
+
+
 .hero p{
 
     font-size:20px;
 
 }
 
+
+
 section h2{
 
     font-size:34px;
 
 }
+
 
 }
